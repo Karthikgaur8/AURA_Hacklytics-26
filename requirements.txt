@@ -1,0 +1,9 @@
+yfinance
+torch
+pandas
+numpy
+scipy
+matplotlib
+gradio
+chronos-forecasting
+google-genai
