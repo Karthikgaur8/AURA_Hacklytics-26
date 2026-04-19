@@ -2,7 +2,7 @@
 
 **AURA** is an institutional-grade variance mispricing engine that shifts the focus from fragile directional price prediction to the mathematical extraction of volatility alpha. 
 
-By utilizing **Amazon’s Chronos-Bolt** zero-shot foundation model on an **NVIDIA H200** cluster (during the hackathon), the system executes batched tensor inference across the S&P 100 to identify spreads between forecasted variance and live market Implied Volatility (IV).
+By utilizing **Amazon’s Chronos-Bolt** zero-shot foundation model on an **NVIDIA H100** (during the hackathon), the system executes batched tensor inference across the S&P 100 to identify spreads between forecasted variance and live market Implied Volatility (IV).
 
 ##  Core Features
 - **Batched GPU Inference:** Stacks 100+ tickers into a single PyTorch tensor for simultaneous parallel forecasting.
@@ -23,7 +23,7 @@ $$\nu = S \cdot \phi(d_1) \cdot \sqrt{T}$$
 ##  Tech Stack
 - **Model:** `amazon/chronos-bolt-base`
 - **Agent:** `google/gemini-3.1-pro-preview`
-- **Compute:** NVIDIA H200 (141GB VRAM)
+- **Compute:** NVIDIA H100
 - **Frontend:** Gradio (Institutional Monochrome)
 
 ##  Installation
